@@ -72,7 +72,8 @@ def function3():
     #extract those numbers from given array. those are must exist in 5,7 Table
     #example [35,70,105,..]
     a = np.arange(1, 100*10+1).reshape((100,10))
-    x = a[] #wrtie your code here
+    x = a[a%5 == 0] #wrtie your code here
+    x = x[x%7 ==0]
     return x
     """
     Expected Output:
@@ -86,8 +87,8 @@ def function4():
     #Swap columns 1 and 2 in the array arr.
    
     arr = np.arange(9).reshape(3,3)
-  
-    return #wrtie your code here
+    arr[:, [1, 0]] = arr[:, [0, 1]]
+    return arr #wrtie your code here
     """
     Expected Output:
           array([[1, 0, 2],
