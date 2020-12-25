@@ -48,7 +48,7 @@ def function2():
     #array value should be satart from 10 and end with 36 (both included)
     # Hint: dtype, reshape 
     
-    x = np.arange(1,28,dtype=np.float64).reshape((3,3,3))     #wrtie your code here
+    x = np.arange(10,37,dtype=np.float64).reshape((3,3,3))     #wrtie your code here
 
 
     return x
