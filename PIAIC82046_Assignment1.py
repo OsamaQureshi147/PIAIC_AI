@@ -115,8 +115,8 @@ def function5():
 def function6():
     # Create a null vector of size 10 but the fifth and eighth value which is 10,20 respectively
    
-    arr = #wrtie your code here
-  
+    arr = np.zeros(10) #wrtie your code here
+    arr[5], arr[8] = 10,20
     return arr
    
     
@@ -125,7 +125,7 @@ def function7():
     #  Create an array of zeros with the same shape and type as X. Dont use reshape method
     x = np.arange(4, dtype=np.int64)
   
-    return #write your code here
+    return np.zeros(4,dtype=np.int64) #write your code here
 
     """
     Expected Output:
@@ -136,7 +136,7 @@ def function7():
 def function8():
     # Create a new array of 2x5 uints, filled with 6.
     
-    x = #write your code here
+    x = np.full((2,5), fill_value=6) #write your code here
   
     return x
 
@@ -149,9 +149,7 @@ def function8():
 #task9
 def function9():
     # Create an array of 2, 4, 6, 8, ..., 100.
-    
-    a = # write your code here
-  
+    a = np.arange(start=2, stop=102, step=2) # write your code here
     return a
 
      """
@@ -168,7 +166,7 @@ def function10():
     
     arr = np.array([[3,3,3],[4,4,4],[5,5,5]])
     brr = np.array([1,2,3])
-    subt = # write your code here 
+    subt = arr-brr[:,None] # write your code here 
   
     return subt
 
@@ -185,7 +183,8 @@ def function11():
     # Replace all odd numbers in arr with -1 without changing arr.
     
     arr = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-    ans = #write your code here 
+    ans = arr.copy()
+    ans[ans%2 == 1] = -1 #write your code here 
   
     return ans
 
