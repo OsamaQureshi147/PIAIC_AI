@@ -100,7 +100,7 @@ def function4():
 def function5():
     #Create a null vector of size 20 with 4 rows and 5 columns with numpy function
    
-    z = #wrtie your code here
+    z = np.zeros((4,5)) #wrtie your code here
   
     return z
     """
