@@ -199,7 +199,7 @@ def function12():
     # HINT: use stacking concept
     
     arr = np.array([1,2,3])
-    ans = np.arange(100) #write your code here 
+    ans = np.concatenate((np.repeat(arr,3), np.tile(arr,3))) #write your code here 
   
     return ans
 
@@ -214,7 +214,7 @@ def function13():
     
     
     arr = np.array([2, 6, 1, 9, 10, 3, 27])
-    ans = #write your code here 
+    ans = np.where((arr>=5 and arr<=10)) #write your code here 
   
     return ans
 
